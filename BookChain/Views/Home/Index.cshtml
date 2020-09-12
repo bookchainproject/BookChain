@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <header class="cover-section">
+        <canvas id="mainCanvas" class="cover-photo" width="504" height="250"></canvas>
+        <h3>I want to...</h3>
+    </header>
+<section class="aside-section">
+    <aside class="aside-container">
+        <a asp-controller="Purchases" asp-action="Buy" class="link">Place an Order</a>
+    </aside>
+    <aside class="aside-container">
+        <a asp-controller="Purchases" asp-action="Index" class="link">Watch Orders History</a>
+    </aside>
+    <aside class="aside-container">
+        <a asp-controller="Books" asp-action="Index" class="link">Handle Books</a>
+    </aside>
+    <aside class="aside-container">
+        <a asp-controller="Workers" asp-action="Index" class="link">Manage Workers</a>
+    </aside>
+    <aside class="aside-container">
+        <a asp-controller="Customers" asp-action="Index" class="link">View Customers</a>
+    </aside>
+</section>
+
+<div class="column-container">
+    <div>Best Books</div>
+    <div>Fastest Deliveries</div>
+    <div>Amazing Deals</div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
+    var canvas = $('#mainCanvas')[0];
+    var ctx = canvas.getContext('2d');
+
+    function insertImage() {
+        image = new Image();
+        image.src = 'images/Book.jpg';
+        image.onload = function () {
+            ctx.drawImage(image, 0, 0, 504, 250);
+        }
+    }
+
+    insertImage();
+</script>

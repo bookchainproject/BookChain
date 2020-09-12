@@ -1,0 +1,90 @@
+﻿@model BookChain.Models.Purchase.PurchaseReceiptModel
+
+@{
+    ViewData["Title"] = "Receipt";
+}
+
+<h2>Receipt</h2>
+
+<div>
+    <h4>Purchase</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RecentPurchase.Buyer.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecentPurchase.Buyer.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RecentPurchase.Book.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecentPurchase.Book.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RecentPurchase.Book.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RecentPurchase.Book.Price)
+        </dd>
+    </dl>
+    <hr />
+    <hr />
+    @if (Model.BookReccomendations.Count > 0)
+    {
+        <h2>Recommendations</h2>
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-block">
+                        @foreach (var recommendation in Model.BookReccomendations)
+                        {
+                            <div class="col-lg-3">
+                                <h3>
+                                    @Html.DisplayFor(modelItem => recommendation.Item1)
+                                </h3>
+                                <b>
+                                    @Html.DisplayNameFor(modelItem => recommendation.Item2.Title)
+                                </b>
+                                <p>
+                                    @Html.DisplayFor(modelItem => recommendation.Item2.Title)
+                                </p>
+                                <b>
+                                    @Html.DisplayNameFor(modelItem => recommendation.Item2.Author)
+                                </b>
+                                <p>
+                                    @Html.DisplayFor(modelItem => recommendation.Item2.Author)
+                                </p>
+                                <b>
+                                    @Html.DisplayNameFor(modelItem => recommendation.Item2.Rating)
+                                </b>
+                                <p>
+                                    @Html.DisplayFor(modelItem => recommendation.Item2.Rating)
+                                </p>
+                                <b>
+                                    @Html.DisplayNameFor(modelItem => recommendation.Item2.Price)
+                                </b>
+                                <p>
+                                    @Html.DisplayFor(modelItem => recommendation.Item2.Price)
+                                </p>
+                                <a asp-action="Buy" asp-route-BuyerPhone="@Model.RecentPurchase.Buyer.Phone" asp-route-BookId="@recommendation.Item2.Id">Buy This Book!</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <hr />
+    }
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+

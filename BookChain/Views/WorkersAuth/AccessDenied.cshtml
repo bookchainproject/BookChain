@@ -1,0 +1,12 @@
+﻿@model BookChain.Models.Worker.WorkerLoginModel
+
+@{
+    ViewData["Title"] = "AccessDenied";
+}
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">Access Denied. You shall not pass.</h2>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

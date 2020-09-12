@@ -1,0 +1,80 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+@font-face {
+    font-family: chalk;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+.cover-section {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.cover-photo {
+    width: 70%;
+    height: 250px;
+    border-radius: 3em;
+}
+
+.aside-container {
+    display: flex;
+}
+
+.aside-section {
+    padding: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.link {
+    font-family: chalk;
+    color: #2196f3;
+    text-shadow: 1px 3px 4px black;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: color 0.5s;
+}
+
+    .link:hover {
+        color: #6ec6ff;
+        text-decoration: unset;
+    }
+
+.column-container {
+    column-count: 3;
+    column-rule: 1px solid #5d5350;
+    text-align: center;
+    font-size: 2em;
+    padding: 3em;
+}
+
+#tooltip {
+    visibility: hidden;
+    position: absolute;
+    font-weight: bold;
+    padding: 1em;
+    right: 14em;
+    border: 1px solid;
+    border-radius: 3em;
+    top: 14em;
+    background-color: floralwhite;
+}
