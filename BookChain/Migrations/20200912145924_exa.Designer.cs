@@ -4,14 +4,16 @@ using BookChain.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookChain.Migrations
 {
     [DbContext(typeof(BookChainContext))]
-    partial class BookChainContextModelSnapshot : ModelSnapshot
+    [Migration("20200912145924_exa")]
+    partial class exa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,79 +55,79 @@ namespace BookChain.Migrations
                         new
                         {
                             Id = 1,
-                            AgeRangeMax = 120,
+                            AgeRangeMax = 28,
                             AgeRangeMin = 14,
-                            Author = "J.K. Rowling",
+                            Author = "Naoki Yoshida",
                             Genre = "Fantasy",
                             Price = 20,
-                            Quantity = 10,
+                            Quantity = 5,
                             Rating = 9f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 113, DateTimeKind.Local).AddTicks(679),
-                            Title = "Harry Potter and the Half-Blood Prince"
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 780, DateTimeKind.Local).AddTicks(5743),
+                            Title = "A Realm Reborn"
                         },
                         new
                         {
                             Id = 2,
-                            AgeRangeMax = 50,
+                            AgeRangeMax = 28,
                             AgeRangeMin = 16,
-                            Author = "J. R. R. Tolkien",
+                            Author = "Naoki Yoshida",
                             Genre = "Fantasy",
                             Price = 40,
                             Quantity = 3,
                             Rating = 10f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
-                            Title = "Lord of the Rings"
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
+                            Title = "Heavensward"
                         },
                         new
                         {
                             Id = 3,
-                            AgeRangeMax = 60,
-                            AgeRangeMin = 18,
-                            Author = "G R R Martin",
+                            AgeRangeMax = 22,
+                            AgeRangeMin = 14,
+                            Author = "Naoki Yoshida",
                             Genre = "Fantasy",
                             Price = 40,
                             Quantity = 11,
                             Rating = 7f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
-                            Title = "A Game of Thrones"
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
+                            Title = "Stormblood"
                         },
                         new
                         {
                             Id = 4,
                             AgeRangeMax = 32,
                             AgeRangeMin = 19,
-                            Author = "Guillermo del Toro",
+                            Author = "Naoki Yoshida",
                             Genre = "Horror",
                             Price = 40,
                             Quantity = 7,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
-                            Title = "Pan's Labyrinth"
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
+                            Title = "Shadowbringers"
                         },
                         new
                         {
                             Id = 5,
-                            AgeRangeMax = 60,
-                            AgeRangeMin = 14,
-                            Author = "J.K. Rowling",
+                            AgeRangeMax = 55,
+                            AgeRangeMin = 16,
+                            Author = "F. C. Yee",
                             Genre = "Fantasy",
                             Price = 67,
                             Quantity = 24,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
-                            Title = "Harry Potter and the Prisoner of Azkaban"
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
+                            Title = "The rise of Kyoshi"
                         },
                         new
                         {
                             Id = 6,
                             AgeRangeMax = 99,
-                            AgeRangeMin = 14,
+                            AgeRangeMin = 6,
                             Author = "J. R. R. Tolkien",
                             Genre = "Fantasy",
                             Price = 30,
                             Quantity = 18,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
                             Title = "The Hobbit"
                         },
                         new
@@ -133,51 +135,51 @@ namespace BookChain.Migrations
                             Id = 7,
                             AgeRangeMax = 67,
                             AgeRangeMin = 18,
-                            Author = "Philip  Pullman",
+                            Author = "H. P. Lovecraft",
                             Genre = "Fantasy",
                             Price = 23,
                             Quantity = 45,
-                            Rating = 6f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
-                            Title = "His Dark Materials"
+                            Rating = 8f,
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
+                            Title = "The Call of Cthulhu"
                         },
                         new
                         {
                             Id = 8,
-                            AgeRangeMax = 50,
-                            AgeRangeMin = 14,
-                            Author = "Bram Stoker",
+                            AgeRangeMax = 33,
+                            AgeRangeMin = 16,
+                            Author = "Someone Someonegton",
                             Genre = "Horror",
                             Price = 54,
                             Quantity = 35,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
-                            Title = "Dracula"
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
+                            Title = "Dexter"
                         },
                         new
                         {
                             Id = 9,
-                            AgeRangeMax = 90,
-                            AgeRangeMin = 30,
-                            Author = "Kevlin Henney",
+                            AgeRangeMax = 67,
+                            AgeRangeMin = 18,
+                            Author = "Uncle Bob",
                             Genre = "Programming",
                             Price = 80,
                             Quantity = 42,
-                            Rating = 6f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
-                            Title = "97 Things every java programmer should know"
+                            Rating = 8f,
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
+                            Title = "Clean Code"
                         },
                         new
                         {
                             Id = 10,
-                            AgeRangeMax = 70,
+                            AgeRangeMax = 67,
                             AgeRangeMin = 18,
-                            Author = "Uncle Bob",
+                            Author = "Coder Coddington",
                             Genre = "Programming",
                             Price = 128,
                             Quantity = 37,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 17, 59, 23, 783, DateTimeKind.Local).AddTicks(5741),
                             Title = "Effective Java"
                         });
                 });
@@ -306,55 +308,55 @@ namespace BookChain.Migrations
                         {
                             Id = 1,
                             BirthDate = new DateTime(1981, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "lopez@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "George Lopez",
-                            Phone = "111-9911199"
+                            Email = "MosheShuki@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 17, 59, 23, 784, DateTimeKind.Local).AddTicks(5734),
+                            Name = "Moshe Shuki Maashush",
+                            Phone = "999-9999999"
                         },
                         new
                         {
                             Id = 2,
                             BirthDate = new DateTime(1999, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "johnny@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Johnny Deep",
+                            Email = "Stichland@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 17, 59, 23, 784, DateTimeKind.Local).AddTicks(5734),
+                            Name = "Stich Hood",
                             Phone = "404-4045404"
                         },
                         new
                         {
                             Id = 3,
                             BirthDate = new DateTime(1997, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "jackzaf@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Jack Zafrani",
-                            Phone = "058-78594785"
+                            Email = "naaman123@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 17, 59, 23, 784, DateTimeKind.Local).AddTicks(5734),
+                            Name = "Naaman Tsur",
+                            Phone = "054-342342"
                         },
                         new
                         {
                             Id = 4,
                             BirthDate = new DateTime(1999, 1, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "heizer@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Miles Heizer",
-                            Phone = "125-458985659"
+                            Email = "liroasdasd@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 17, 59, 23, 784, DateTimeKind.Local).AddTicks(5734),
+                            Name = "Lior Somdit",
+                            Phone = "192-123591"
                         },
                         new
                         {
                             Id = 5,
                             BirthDate = new DateTime(1968, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "vladdie@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Vlad",
+                            Email = "southerntemoke@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 17, 59, 23, 784, DateTimeKind.Local).AddTicks(5734),
+                            Name = "Kelsang forbes",
                             Phone = "152-1637894"
                         },
                         new
                         {
                             Id = 6,
                             BirthDate = new DateTime(1965, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "michoacan@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Joan Sebastian",
-                            Phone = "125-154589635"
+                            Email = "yokoyarocks@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 17, 59, 23, 784, DateTimeKind.Local).AddTicks(5734),
+                            Name = "Jianzhu thumb",
+                            Phone = "152-9182734"
                         });
                 });
 
@@ -477,14 +479,14 @@ namespace BookChain.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "db4f1709-105d-4ac7-802e-71453c36be2b",
+                            ConcurrencyStamp = "4b1dcd14-e77e-47a6-b929-1da4fe539ee8",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "9bc52d43-2235-40fb-ab8b-e4155516eaaf",
+                            ConcurrencyStamp = "b0bf9945-30a2-478c-ad2a-92fc2ab6fa46",
                             Name = "Worker",
                             NormalizedName = "WORKER"
                         });

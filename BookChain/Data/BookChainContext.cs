@@ -49,8 +49,8 @@ namespace BookChain.Data
                 City = "Rishon Lezion",
                 Street = "HaDayagim",
                 BuildingNumber = 2,
-                Name = "Bookstore Of Managmenet",
-                Owner = "Doctor Shakshuka",
+                Name = "Bookstore Of Colman",
+                Owner = "the dicant",
                 Phone = "03-9634390",
                 OpeningHours = "08:00 - 20:00"
             });
@@ -59,48 +59,52 @@ namespace BookChain.Data
                 Id = 2,
                 Country = "Israel",
                 City = "Tel Aviv",
-                Street = "Shaul Hamelech",
-                BuildingNumber = 4,
-                Name = "Bookstore Of Parties",
-                Owner = "Lady Luck",
-                Phone = "052-0522250",
+                Street = "Allenby",
+                BuildingNumber = 10,
+                Name = "Books in the Shuk",
+                Owner = "Adam Adamson",
+                Phone = "052-25648562",
                 OpeningHours = "09:00 - 18:00"
             });
+
             modelBuilder.Entity<Branch>().HasData(new Branch
             {
                 Id = 3,
                 Country = "Israel",
-                City = "Eilat",
-                Street = "Agmonim",
-                BuildingNumber = 8,
-                Name = "Bookstore Of Seas",
-                Owner = "Mister Surfer",
-                Phone = "050-2386234",
-                OpeningHours = "06:00 - 17:00"
+                City = "Bat Yam",
+                Street = "Ha-Rav Nisanbaum",
+                BuildingNumber = 33,
+                Owner = "Aquaman",
+                Phone = "050-652684",
+                OpeningHours = "06:00 - 17:00",
+                Name = "Bookstore Of Mermaids"
             });
+
+            // Frishman St 76, 
             modelBuilder.Entity<Branch>().HasData(new Branch
             {
                 Id = 4,
                 Country = "Israel",
-                City = "Tiberias",
-                Street = "HaKishon",
-                BuildingNumber = 1,
-                Name = "Bookstore Of Nothing",
-                Owner = "Cool Chiller",
-                Phone = "08-9423665",
-                OpeningHours = "11:00 - 22:00"
+                Street = "Frishman",
+                City = "Tel Aviv-Yafo",
+                BuildingNumber = 76,
+                Name = "Fantasy and other vegetables",
+                Owner = "comic man",
+                Phone = "058-642869",
+                OpeningHours = "11:00 - 18:30"
             });
+
             modelBuilder.Entity<Branch>().HasData(new Branch
             {
                 Id = 5,
                 Country = "Israel",
+                Street = "Stella Maris",
                 City = "Haifa",
-                Street = "Tchernichovski",
-                BuildingNumber = 26,
-                Name = "Bookstore Of Spades",
-                Owner = "Mad Scientist",
-                Phone = "04-5371945",
-                OpeningHours = "08:00 - 21:00"
+                BuildingNumber = 100,
+                Name = "Bookstore Of Science",
+                Owner = "The great geek",
+                Phone = "04-2564826",
+                OpeningHours = "08:00 - 20:00"
             });
         }
 
@@ -109,18 +113,18 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 1,
-                Name = "Moshe Shuki Maashush",
-                Phone = "999-9999999",
-                Email = "MosheShuki@gmail.com",
+                Name = "George Lopez",
+                Phone = "111-9911199",
+                Email = "lopez@gmail.com",
                 BirthDate = new DateTime(1981, 3, 23),
                 JoinDate = DateTime.Now,
             });
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 2,
-                Name = "Stich Hood",
+                Name = "Johnny Deep",
                 Phone = "404-4045404",
-                Email = "Stichland@gmail.com",
+                Email = "johnny@gmail.com",
                 BirthDate = new DateTime(1999, 8, 5),
                 JoinDate = DateTime.Now,
             });
@@ -128,9 +132,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 3,
-                Name = "Naaman Tsur",
-                Phone = "054-342342",
-                Email = "naaman123@gmail.com",
+                Name = "Jack Zafrani",
+                Phone = "058-78594785",
+                Email = "jackzaf@gmail.com",
                 BirthDate = new DateTime(1997, 12, 17),
                 JoinDate = DateTime.Now,
             });
@@ -138,9 +142,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 4,
-                Name = "Lior Somdit",
-                Phone = "192-123591",
-                Email = "liroasdasd@gmail.com",
+                Name = "Miles Heizer",
+                Phone = "125-458985659",
+                Email = "heizer@gmail.com",
                 BirthDate = new DateTime(1999, 1, 17),
                 JoinDate = DateTime.Now,
             });
@@ -148,9 +152,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 5,
-                Name = "Kelsang forbes",
+                Name = "Vlad",
                 Phone = "152-1637894",
-                Email = "southerntemoke@gmail.com",
+                Email = "vladdie@gmail.com",
                 BirthDate = new DateTime(1968, 8, 5),
                 JoinDate = DateTime.Now,
             });
@@ -158,9 +162,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 6,
-                Name = "Jianzhu thumb",
-                Phone = "152-9182734",
-                Email = "yokoyarocks@gmail.com",
+                Name = "Joan Sebastian",
+                Phone = "125-154589635",
+                Email = "michoacan@gmail.com",
                 BirthDate = new DateTime(1965, 9, 5),
                 JoinDate = DateTime.Now,
             });
@@ -171,47 +175,48 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 1,
-                Title = "A Realm Reborn",
-                Author = "Naoki Yoshida",
+                Title = "Harry Potter and the Half-Blood Prince",
+                Author = "J.K. Rowling",
                 ReleaseDate = DateTime.Now,
                 Rating = 9.0f,
                 Genre = "Fantasy",
                 AgeRangeMin = 14,
-                AgeRangeMax = 28,
+                AgeRangeMax = 120,
                 Price = 20,
-                Quantity = 5,
+                Quantity = 10
             });
+
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 2,
-                Title = "Heavensward",
-                Author = "Naoki Yoshida",
+                Title = "Lord of the Rings",
+                Author = "J. R. R. Tolkien",
                 ReleaseDate = DateTime.Now,
                 Rating = 10.0f,
                 Genre = "Fantasy",
                 AgeRangeMin = 16,
-                AgeRangeMax = 28,
+                AgeRangeMax = 50,
                 Price = 40,
                 Quantity = 3,
             });
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 3,
-                Title = "Stormblood",
-                Author = "Naoki Yoshida",
+                Title = "A Game of Thrones",
+                Author = "G R R Martin",
                 ReleaseDate = DateTime.Now,
                 Rating = 7.0f,
                 Genre = "Fantasy",
-                AgeRangeMin = 14,
-                AgeRangeMax = 22,
+                AgeRangeMin = 18,
+                AgeRangeMax = 60,
                 Price = 40,
                 Quantity = 11,
             });
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 4,
-                Title = "Shadowbringers",
-                Author = "Naoki Yoshida",
+                Title = "Pan's Labyrinth",
+                Author = "Guillermo del Toro",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Horror",
@@ -224,13 +229,13 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 5,
-                Title = "The rise of Kyoshi",
-                Author = "F. C. Yee",
+                Title = "Harry Potter and the Prisoner of Azkaban",
+                Author = "J.K. Rowling",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Fantasy",
-                AgeRangeMin = 16,
-                AgeRangeMax = 55,
+                AgeRangeMin = 14,
+                AgeRangeMax = 60,
                 Price = 67,
                 Quantity = 24,
             });
@@ -243,7 +248,7 @@ namespace BookChain.Data
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Fantasy",
-                AgeRangeMin = 6,
+                AgeRangeMin = 14,
                 AgeRangeMax = 99,
                 Price = 30,
                 Quantity = 18,
@@ -252,10 +257,10 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 7,
-                Title = "The Call of Cthulhu",
-                Author = "H. P. Lovecraft",
                 ReleaseDate = DateTime.Now,
-                Rating = 8.0f,
+                Title = "His Dark Materials",
+                Author = "Philip  Pullman",
+                Rating = 6.0f,
                 Genre = "Fantasy",
                 AgeRangeMin = 18,
                 AgeRangeMax = 67,
@@ -266,13 +271,13 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 8,
-                Title = "Dexter",
-                Author = "Someone Someonegton",
+                Title = "Dracula",
+                Author = "Bram Stoker",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Horror",
-                AgeRangeMin = 16,
-                AgeRangeMax = 33,
+                AgeRangeMin = 14,
+                AgeRangeMax = 50,
                 Price = 54,
                 Quantity = 35,
             });
@@ -280,13 +285,13 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 9,
-                Title = "Clean Code",
-                Author = "Uncle Bob",
+                Title = "97 Things every java programmer should know",
+                Author = "Kevlin Henney",
                 ReleaseDate = DateTime.Now,
-                Rating = 8.0f,
+                Rating = 6.0f,
                 Genre = "Programming",
-                AgeRangeMin = 18,
-                AgeRangeMax = 67,
+                AgeRangeMin = 30,
+                AgeRangeMax = 90,
                 Price = 80,
                 Quantity = 42,
             });
@@ -295,12 +300,12 @@ namespace BookChain.Data
             {
                 Id = 10,
                 Title = "Effective Java",
-                Author = "Coder Coddington",
+                Author = "Uncle Bob",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Programming",
                 AgeRangeMin = 18,
-                AgeRangeMax = 67,
+                AgeRangeMax = 70,
                 Price = 128,
                 Quantity = 37,
             });

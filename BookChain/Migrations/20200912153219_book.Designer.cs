@@ -4,14 +4,16 @@ using BookChain.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookChain.Migrations
 {
     [DbContext(typeof(BookChainContext))]
-    partial class BookChainContextModelSnapshot : ModelSnapshot
+    [Migration("20200912153219_book")]
+    partial class book
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,7 +62,7 @@ namespace BookChain.Migrations
                             Price = 20,
                             Quantity = 10,
                             Rating = 9f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 113, DateTimeKind.Local).AddTicks(679),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 192, DateTimeKind.Local).AddTicks(2090),
                             Title = "Harry Potter and the Half-Blood Prince"
                         },
                         new
@@ -73,7 +75,7 @@ namespace BookChain.Migrations
                             Price = 40,
                             Quantity = 3,
                             Rating = 10f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "Lord of the Rings"
                         },
                         new
@@ -86,7 +88,7 @@ namespace BookChain.Migrations
                             Price = 40,
                             Quantity = 11,
                             Rating = 7f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "A Game of Thrones"
                         },
                         new
@@ -99,7 +101,7 @@ namespace BookChain.Migrations
                             Price = 40,
                             Quantity = 7,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "Pan's Labyrinth"
                         },
                         new
@@ -112,7 +114,7 @@ namespace BookChain.Migrations
                             Price = 67,
                             Quantity = 24,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "Harry Potter and the Prisoner of Azkaban"
                         },
                         new
@@ -125,7 +127,7 @@ namespace BookChain.Migrations
                             Price = 30,
                             Quantity = 18,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "The Hobbit"
                         },
                         new
@@ -138,7 +140,7 @@ namespace BookChain.Migrations
                             Price = 23,
                             Quantity = 45,
                             Rating = 6f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "His Dark Materials"
                         },
                         new
@@ -151,7 +153,7 @@ namespace BookChain.Migrations
                             Price = 54,
                             Quantity = 35,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "Dracula"
                         },
                         new
@@ -164,7 +166,7 @@ namespace BookChain.Migrations
                             Price = 80,
                             Quantity = 42,
                             Rating = 6f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "97 Things every java programmer should know"
                         },
                         new
@@ -177,7 +179,7 @@ namespace BookChain.Migrations
                             Price = 128,
                             Quantity = 37,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 49, 10, 116, DateTimeKind.Local).AddTicks(777),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
                             Title = "Effective Java"
                         });
                 });
@@ -306,55 +308,55 @@ namespace BookChain.Migrations
                         {
                             Id = 1,
                             BirthDate = new DateTime(1981, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "lopez@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "George Lopez",
-                            Phone = "111-9911199"
+                            Email = "MosheShuki@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            Name = "Moshe Shuki Maashush",
+                            Phone = "999-9999999"
                         },
                         new
                         {
                             Id = 2,
                             BirthDate = new DateTime(1999, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "johnny@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Johnny Deep",
+                            Email = "Stichland@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            Name = "Stich Hood",
                             Phone = "404-4045404"
                         },
                         new
                         {
                             Id = 3,
                             BirthDate = new DateTime(1997, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "jackzaf@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Jack Zafrani",
-                            Phone = "058-78594785"
+                            Email = "naaman123@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            Name = "Naaman Tsur",
+                            Phone = "054-342342"
                         },
                         new
                         {
                             Id = 4,
                             BirthDate = new DateTime(1999, 1, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "heizer@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Miles Heizer",
-                            Phone = "125-458985659"
+                            Email = "liroasdasd@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            Name = "Lior Somdit",
+                            Phone = "192-123591"
                         },
                         new
                         {
                             Id = 5,
                             BirthDate = new DateTime(1968, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "vladdie@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Vlad",
+                            Email = "southerntemoke@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            Name = "Kelsang forbes",
                             Phone = "152-1637894"
                         },
                         new
                         {
                             Id = 6,
                             BirthDate = new DateTime(1965, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "michoacan@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 49, 10, 117, DateTimeKind.Local).AddTicks(677),
-                            Name = "Joan Sebastian",
-                            Phone = "125-154589635"
+                            Email = "yokoyarocks@gmail.com",
+                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            Name = "Jianzhu thumb",
+                            Phone = "152-9182734"
                         });
                 });
 
@@ -477,14 +479,14 @@ namespace BookChain.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "db4f1709-105d-4ac7-802e-71453c36be2b",
+                            ConcurrencyStamp = "2d2f5b78-4ae0-4d0e-87d4-71fa7bbe1e66",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "9bc52d43-2235-40fb-ab8b-e4155516eaaf",
+                            ConcurrencyStamp = "21adfb54-0b38-4e8b-9612-e63ee8f7a445",
                             Name = "Worker",
                             NormalizedName = "WORKER"
                         });
