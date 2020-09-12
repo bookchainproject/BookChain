@@ -42,7 +42,7 @@ namespace BookChain.Data
                 {
                     UserName = "Nobody",
                     Email = "nobody@nowhere.com",
-                    Name = "Israel Israeli",
+                    Name = "QA user",
                     Phone = "052-4625684",
                     Salary = 32,
                     JoinDate = DateTime.Now

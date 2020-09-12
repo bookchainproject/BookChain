@@ -113,18 +113,18 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 1,
-                Name = "Moshe Shuki Maashush",
-                Phone = "999-9999999",
-                Email = "MosheShuki@gmail.com",
+                Name = "George Lopez",
+                Phone = "111-9911199",
+                Email = "lopez@gmail.com",
                 BirthDate = new DateTime(1981, 3, 23),
                 JoinDate = DateTime.Now,
             });
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 2,
-                Name = "Stich Hood",
+                Name = "Johnny Deep",
                 Phone = "404-4045404",
-                Email = "Stichland@gmail.com",
+                Email = "johnny@gmail.com",
                 BirthDate = new DateTime(1999, 8, 5),
                 JoinDate = DateTime.Now,
             });
@@ -132,9 +132,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 3,
-                Name = "Naaman Tsur",
-                Phone = "054-342342",
-                Email = "naaman123@gmail.com",
+                Name = "Jack Zafrani",
+                Phone = "058-78594785",
+                Email = "jackzaf@gmail.com",
                 BirthDate = new DateTime(1997, 12, 17),
                 JoinDate = DateTime.Now,
             });
@@ -142,9 +142,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 4,
-                Name = "Lior Somdit",
-                Phone = "192-123591",
-                Email = "liroasdasd@gmail.com",
+                Name = "Miles Heizer",
+                Phone = "125-458985659",
+                Email = "heizer@gmail.com",
                 BirthDate = new DateTime(1999, 1, 17),
                 JoinDate = DateTime.Now,
             });
@@ -152,9 +152,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 5,
-                Name = "Kelsang forbes",
+                Name = "Vlad",
                 Phone = "152-1637894",
-                Email = "southerntemoke@gmail.com",
+                Email = "vladdie@gmail.com",
                 BirthDate = new DateTime(1968, 8, 5),
                 JoinDate = DateTime.Now,
             });
@@ -162,9 +162,9 @@ namespace BookChain.Data
             modelBuilder.Entity<Customer>().HasData(new Customer
             {
                 Id = 6,
-                Name = "Jianzhu thumb",
-                Phone = "152-9182734",
-                Email = "yokoyarocks@gmail.com",
+                Name = "Joan Sebastian",
+                Phone = "125-154589635",
+                Email = "michoacan@gmail.com",
                 BirthDate = new DateTime(1965, 9, 5),
                 JoinDate = DateTime.Now,
             });
