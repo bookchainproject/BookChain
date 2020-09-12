@@ -49,8 +49,8 @@ namespace BookChain.Data
                 City = "Rishon Lezion",
                 Street = "HaDayagim",
                 BuildingNumber = 2,
-                Name = "Bookstore Of Managmenet",
-                Owner = "Doctor Shakshuka",
+                Name = "Bookstore Of Colman",
+                Owner = "the dicant",
                 Phone = "03-9634390",
                 OpeningHours = "08:00 - 20:00"
             });
@@ -59,48 +59,52 @@ namespace BookChain.Data
                 Id = 2,
                 Country = "Israel",
                 City = "Tel Aviv",
-                Street = "Shaul Hamelech",
-                BuildingNumber = 4,
-                Name = "Bookstore Of Parties",
-                Owner = "Lady Luck",
-                Phone = "052-0522250",
+                Street = "Allenby",
+                BuildingNumber = 10,
+                Name = "Books in the Shuk",
+                Owner = "Adam Adamson",
+                Phone = "052-25648562",
                 OpeningHours = "09:00 - 18:00"
             });
+
             modelBuilder.Entity<Branch>().HasData(new Branch
             {
                 Id = 3,
                 Country = "Israel",
-                City = "Eilat",
-                Street = "Agmonim",
-                BuildingNumber = 8,
-                Name = "Bookstore Of Seas",
-                Owner = "Mister Surfer",
-                Phone = "050-2386234",
-                OpeningHours = "06:00 - 17:00"
+                City = "Bat Yam",
+                Street = "Ha-Rav Nisanbaum",
+                BuildingNumber = 33,
+                Owner = "Aquaman",
+                Phone = "050-652684",
+                OpeningHours = "06:00 - 17:00",
+                Name = "Bookstore Of Mermaids"
             });
+
+            // Frishman St 76, 
             modelBuilder.Entity<Branch>().HasData(new Branch
             {
                 Id = 4,
                 Country = "Israel",
-                City = "Tiberias",
-                Street = "HaKishon",
-                BuildingNumber = 1,
-                Name = "Bookstore Of Nothing",
-                Owner = "Cool Chiller",
-                Phone = "08-9423665",
-                OpeningHours = "11:00 - 22:00"
+                Street = "Frishman",
+                City = "Tel Aviv-Yafo",
+                BuildingNumber = 76,
+                Name = "Fantasy and other vegetables",
+                Owner = "comic man",
+                Phone = "058-642869",
+                OpeningHours = "11:00 - 18:30"
             });
+
             modelBuilder.Entity<Branch>().HasData(new Branch
             {
                 Id = 5,
                 Country = "Israel",
+                Street = "Stella Maris",
                 City = "Haifa",
-                Street = "Tchernichovski",
-                BuildingNumber = 26,
-                Name = "Bookstore Of Spades",
-                Owner = "Mad Scientist",
-                Phone = "04-5371945",
-                OpeningHours = "08:00 - 21:00"
+                BuildingNumber = 100,
+                Name = "Bookstore Of Science",
+                Owner = "The great geek",
+                Phone = "04-2564826",
+                OpeningHours = "08:00 - 20:00"
             });
         }
 
