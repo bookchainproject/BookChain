@@ -175,47 +175,48 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 1,
-                Title = "A Realm Reborn",
-                Author = "Naoki Yoshida",
+                Title = "Harry Potter and the Half-Blood Prince",
+                Author = "J.K. Rowling",
                 ReleaseDate = DateTime.Now,
                 Rating = 9.0f,
                 Genre = "Fantasy",
                 AgeRangeMin = 14,
-                AgeRangeMax = 28,
+                AgeRangeMax = 120,
                 Price = 20,
-                Quantity = 5,
+                Quantity = 10
             });
+
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 2,
-                Title = "Heavensward",
-                Author = "Naoki Yoshida",
+                Title = "Lord of the Rings",
+                Author = "J. R. R. Tolkien",
                 ReleaseDate = DateTime.Now,
                 Rating = 10.0f,
                 Genre = "Fantasy",
                 AgeRangeMin = 16,
-                AgeRangeMax = 28,
+                AgeRangeMax = 50,
                 Price = 40,
                 Quantity = 3,
             });
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 3,
-                Title = "Stormblood",
-                Author = "Naoki Yoshida",
+                Title = "A Game of Thrones",
+                Author = "G R R Martin",
                 ReleaseDate = DateTime.Now,
                 Rating = 7.0f,
                 Genre = "Fantasy",
-                AgeRangeMin = 14,
-                AgeRangeMax = 22,
+                AgeRangeMin = 18,
+                AgeRangeMax = 60,
                 Price = 40,
                 Quantity = 11,
             });
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 4,
-                Title = "Shadowbringers",
-                Author = "Naoki Yoshida",
+                Title = "Pan's Labyrinth",
+                Author = "Guillermo del Toro",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Horror",
@@ -228,13 +229,13 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 5,
-                Title = "The rise of Kyoshi",
-                Author = "F. C. Yee",
+                Title = "Harry Potter and the Prisoner of Azkaban",
+                Author = "J.K. Rowling",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Fantasy",
-                AgeRangeMin = 16,
-                AgeRangeMax = 55,
+                AgeRangeMin = 14,
+                AgeRangeMax = 60,
                 Price = 67,
                 Quantity = 24,
             });
@@ -247,7 +248,7 @@ namespace BookChain.Data
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Fantasy",
-                AgeRangeMin = 6,
+                AgeRangeMin = 14,
                 AgeRangeMax = 99,
                 Price = 30,
                 Quantity = 18,
@@ -256,10 +257,10 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 7,
-                Title = "The Call of Cthulhu",
-                Author = "H. P. Lovecraft",
                 ReleaseDate = DateTime.Now,
-                Rating = 8.0f,
+                Title = "His Dark Materials",
+                Author = "Philip  Pullman",
+                Rating = 6.0f,
                 Genre = "Fantasy",
                 AgeRangeMin = 18,
                 AgeRangeMax = 67,
@@ -270,13 +271,13 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 8,
-                Title = "Dexter",
-                Author = "Someone Someonegton",
+                Title = "Dracula",
+                Author = "Bram Stoker",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Horror",
-                AgeRangeMin = 16,
-                AgeRangeMax = 33,
+                AgeRangeMin = 14,
+                AgeRangeMax = 50,
                 Price = 54,
                 Quantity = 35,
             });
@@ -284,13 +285,13 @@ namespace BookChain.Data
             modelBuilder.Entity<Book>().HasData(new Book
             {
                 Id = 9,
-                Title = "Clean Code",
-                Author = "Uncle Bob",
+                Title = "97 Things every java programmer should know",
+                Author = "Kevlin Henney",
                 ReleaseDate = DateTime.Now,
-                Rating = 8.0f,
+                Rating = 6.0f,
                 Genre = "Programming",
-                AgeRangeMin = 18,
-                AgeRangeMax = 67,
+                AgeRangeMin = 30,
+                AgeRangeMax = 90,
                 Price = 80,
                 Quantity = 42,
             });
@@ -299,12 +300,12 @@ namespace BookChain.Data
             {
                 Id = 10,
                 Title = "Effective Java",
-                Author = "Coder Coddington",
+                Author = "Uncle Bob",
                 ReleaseDate = DateTime.Now,
                 Rating = 8.0f,
                 Genre = "Programming",
                 AgeRangeMin = 18,
-                AgeRangeMax = 67,
+                AgeRangeMax = 70,
                 Price = 128,
                 Quantity = 37,
             });

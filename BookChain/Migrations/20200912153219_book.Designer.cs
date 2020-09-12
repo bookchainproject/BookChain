@@ -4,14 +4,16 @@ using BookChain.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookChain.Migrations
 {
     [DbContext(typeof(BookChainContext))]
-    partial class BookChainContextModelSnapshot : ModelSnapshot
+    [Migration("20200912153219_book")]
+    partial class book
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

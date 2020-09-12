@@ -4,14 +4,16 @@ using BookChain.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BookChain.Migrations
 {
     [DbContext(typeof(BookChainContext))]
-    partial class BookChainContextModelSnapshot : ModelSnapshot
+    [Migration("20200912152556_books")]
+    partial class books
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,7 +62,7 @@ namespace BookChain.Migrations
                             Price = 20,
                             Quantity = 10,
                             Rating = 9f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 192, DateTimeKind.Local).AddTicks(2090),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 190, DateTimeKind.Local).AddTicks(9826),
                             Title = "Harry Potter and the Half-Blood Prince"
                         },
                         new
@@ -73,7 +75,7 @@ namespace BookChain.Migrations
                             Price = 40,
                             Quantity = 3,
                             Rating = 10f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "Lord of the Rings"
                         },
                         new
@@ -86,7 +88,7 @@ namespace BookChain.Migrations
                             Price = 40,
                             Quantity = 11,
                             Rating = 7f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "A Game of Thrones"
                         },
                         new
@@ -99,7 +101,7 @@ namespace BookChain.Migrations
                             Price = 40,
                             Quantity = 7,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "Pan's Labyrinth"
                         },
                         new
@@ -112,7 +114,7 @@ namespace BookChain.Migrations
                             Price = 67,
                             Quantity = 24,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "Harry Potter and the Prisoner of Azkaban"
                         },
                         new
@@ -125,7 +127,7 @@ namespace BookChain.Migrations
                             Price = 30,
                             Quantity = 18,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "The Hobbit"
                         },
                         new
@@ -138,7 +140,7 @@ namespace BookChain.Migrations
                             Price = 23,
                             Quantity = 45,
                             Rating = 6f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "His Dark Materials"
                         },
                         new
@@ -151,7 +153,7 @@ namespace BookChain.Migrations
                             Price = 54,
                             Quantity = 35,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "Dracula"
                         },
                         new
@@ -164,7 +166,7 @@ namespace BookChain.Migrations
                             Price = 80,
                             Quantity = 42,
                             Rating = 6f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "97 Things every java programmer should know"
                         },
                         new
@@ -177,7 +179,7 @@ namespace BookChain.Migrations
                             Price = 128,
                             Quantity = 37,
                             Rating = 8f,
-                            ReleaseDate = new DateTime(2020, 9, 12, 18, 32, 19, 196, DateTimeKind.Local).AddTicks(1850),
+                            ReleaseDate = new DateTime(2020, 9, 12, 18, 25, 56, 194, DateTimeKind.Local).AddTicks(9801),
                             Title = "Effective Java"
                         });
                 });
@@ -307,7 +309,7 @@ namespace BookChain.Migrations
                             Id = 1,
                             BirthDate = new DateTime(1981, 3, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "MosheShuki@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            JoinDate = new DateTime(2020, 9, 12, 18, 25, 56, 195, DateTimeKind.Local).AddTicks(9817),
                             Name = "Moshe Shuki Maashush",
                             Phone = "999-9999999"
                         },
@@ -316,7 +318,7 @@ namespace BookChain.Migrations
                             Id = 2,
                             BirthDate = new DateTime(1999, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Stichland@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            JoinDate = new DateTime(2020, 9, 12, 18, 25, 56, 195, DateTimeKind.Local).AddTicks(9817),
                             Name = "Stich Hood",
                             Phone = "404-4045404"
                         },
@@ -325,7 +327,7 @@ namespace BookChain.Migrations
                             Id = 3,
                             BirthDate = new DateTime(1997, 12, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "naaman123@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            JoinDate = new DateTime(2020, 9, 12, 18, 25, 56, 195, DateTimeKind.Local).AddTicks(9817),
                             Name = "Naaman Tsur",
                             Phone = "054-342342"
                         },
@@ -334,7 +336,7 @@ namespace BookChain.Migrations
                             Id = 4,
                             BirthDate = new DateTime(1999, 1, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "liroasdasd@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            JoinDate = new DateTime(2020, 9, 12, 18, 25, 56, 195, DateTimeKind.Local).AddTicks(9817),
                             Name = "Lior Somdit",
                             Phone = "192-123591"
                         },
@@ -343,7 +345,7 @@ namespace BookChain.Migrations
                             Id = 5,
                             BirthDate = new DateTime(1968, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "southerntemoke@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            JoinDate = new DateTime(2020, 9, 12, 18, 25, 56, 195, DateTimeKind.Local).AddTicks(9817),
                             Name = "Kelsang forbes",
                             Phone = "152-1637894"
                         },
@@ -352,7 +354,7 @@ namespace BookChain.Migrations
                             Id = 6,
                             BirthDate = new DateTime(1965, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "yokoyarocks@gmail.com",
-                            JoinDate = new DateTime(2020, 9, 12, 18, 32, 19, 197, DateTimeKind.Local).AddTicks(1851),
+                            JoinDate = new DateTime(2020, 9, 12, 18, 25, 56, 195, DateTimeKind.Local).AddTicks(9817),
                             Name = "Jianzhu thumb",
                             Phone = "152-9182734"
                         });
@@ -477,14 +479,14 @@ namespace BookChain.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "2d2f5b78-4ae0-4d0e-87d4-71fa7bbe1e66",
+                            ConcurrencyStamp = "9800d6e4-ca74-462c-9c17-88db5dc3833a",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "21adfb54-0b38-4e8b-9612-e63ee8f7a445",
+                            ConcurrencyStamp = "7c021dcc-1709-4be9-a829-0426429d9691",
                             Name = "Worker",
                             NormalizedName = "WORKER"
                         });
