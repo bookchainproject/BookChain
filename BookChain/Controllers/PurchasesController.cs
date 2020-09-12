@@ -278,7 +278,8 @@ namespace BookChain.Controllers
 
                 _context.Add(purchase);
                 await _context.SaveChangesAsync();
-                TweetIfNewPurchaseMilestone();
+                // Waiting for Twitter to accept my developer account
+                // TweetIfNewPurchaseMilestone();
 
                 // Update the quantity of the book
                 try
@@ -392,8 +393,8 @@ namespace BookChain.Controllers
             if (numOfPurchases % MILESTONE_INDICATOR == 0 || numOfPurchases == 69 || numOfPurchases == 420)
             {
                 System.Threading.Thread.Sleep(1000);  // sleep needed to insure tweet is sent
-                var service = new TwitterService("M0iDSP4FqLIjpuXpE3qEosbaE", "EOr8rZzG6KrQ0ldGVb2ETAFe8VisaSnDr7Jg60wWVBai2ljzhx");
-                service.AuthenticateWith("1165924809106178048-NAOC9da4imiKuySlkMJaGc4rby312e", "6juVINPkQjsjmfao9mMOHIgGMJBrMgJe66XRKEQH7aQZH");
+                var service = new TwitterService("consumerKey", "consumerSecret");
+                service.AuthenticateWith("accessToken", "accessTokenSecret");
 
                 var tweetHead = "New Purchase Milestone!";
                 var announcement = "As of this moment we oficially sold " + numOfPurchases + " books.";
