@@ -89,7 +89,8 @@ namespace BookChain.Controllers
                 customer.JoinDate = DateTime.Now;
                 _context.Add(customer);
                 await _context.SaveChangesAsync();
-                TweetIfNewCustomersMilestone();
+                // Waiting for Twitter to accept my developer account
+                // TweetIfNewCustomersMilestone();
                 return RedirectToAction(nameof(Index));
             }
             return View(customer);
@@ -196,8 +197,8 @@ namespace BookChain.Controllers
             if (numOfCustomers % MILESTONE_INDICATOR == 0 || numOfCustomers == 69 || numOfCustomers == 420)
             {
                 System.Threading.Thread.Sleep(1000);  // sleep needed to insure tweet is sent
-                var service = new TwitterService("M0iDSP4FqLIjpuXpE3qEosbaE", "EOr8rZzG6KrQ0ldGVb2ETAFe8VisaSnDr7Jg60wWVBai2ljzhx");
-                service.AuthenticateWith("1165924809106178048-NAOC9da4imiKuySlkMJaGc4rby312e", "6juVINPkQjsjmfao9mMOHIgGMJBrMgJe66XRKEQH7aQZH");
+                var service = new TwitterService("consumerKey", "consumerSecret");
+                service.AuthenticateWith("accessToken", "accessTokenSecret");
                 
                 var tweetHead = "New Customer Milestone!";
                 var announcement = "As of this moment we oficially have " + numOfCustomers + " customers.";

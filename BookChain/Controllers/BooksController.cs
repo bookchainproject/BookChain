@@ -123,7 +123,8 @@ namespace BookChain.Controllers
             {
                 _context.Add(book);
                 await _context.SaveChangesAsync();
-                TweetAboutNewBook(book);
+                // Waiting for Twitter to accept my developer account
+                // TweetAboutNewBook(book);
 
                 return RedirectToAction(nameof(Index));
             }
@@ -221,8 +222,8 @@ namespace BookChain.Controllers
         
         private void TweetAboutNewBook(Book book)
         {
-            var service = new TwitterService("M0iDSP4FqLIjpuXpE3qEosbaE", "EOr8rZzG6KrQ0ldGVb2ETAFe8VisaSnDr7Jg60wWVBai2ljzhx");
-            service.AuthenticateWith("1165924809106178048-NAOC9da4imiKuySlkMJaGc4rby312e", "6juVINPkQjsjmfao9mMOHIgGMJBrMgJe66XRKEQH7aQZH");
+            var service = new TwitterService("consumerKey", "consumerSecret");
+            service.AuthenticateWith("accessToken", "accessTokenSecret");
 
             var tweetHead = "New Book Alert!"; 
             var bookInfo = book.Title + " by " + book.Author;
