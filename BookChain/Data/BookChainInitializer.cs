@@ -36,7 +36,7 @@ namespace BookChain.Data
                 }
             }
 
-            if (userManager.FindByEmailAsync("nobody@book.chain").Result == null)
+            if (userManager.FindByEmailAsync("nobody@nowhere.com").Result == null)
             {
                 Worker worker = new Worker
                 {
